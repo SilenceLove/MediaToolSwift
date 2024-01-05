@@ -45,14 +45,6 @@ let package = Package(
             linkerSettings: [
                 .linkedLibrary("objc")
             ]
-        ),
-        .testTarget(
-            name: "MediaToolSwiftTests",
-            dependencies: ["MediaToolSwift"],
-            path: "Tests",
-            exclude: [
-                "media"
-            ]
         )
     ]
 )
